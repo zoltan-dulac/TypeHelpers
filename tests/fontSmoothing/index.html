@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		
+		<title>Font Smoothing Test Page</title>
+		
+		<script type="text/javascript" src="../../shared/js/TypeHelpers.js">
+		</script>
+		
+		<script type="text/javascript">
+		<!--
+			/* 
+			 * This script uses hasFontSmoothing() and displays its information
+			 * in a user-friendly way
+			 */
+			
+						
+			function displayInfo() {
+				
+				var message;
+				var isFontSmoothingOn = TypeHelpers.hasSmoothing();
+				if (isFontSmoothingOn == true) {
+					message = "This browser is using a font-smoothing technology";
+				} else if (isFontSmoothingOn == false) {
+					message = "This browser isn't using a font-smoothing technology"
+				} else {
+					message = "We could not detect if font-smoothing is being used."
+				}
+				document.getElementById('detectInfo').innerHTML = message;
+				
+			}
+			
+			window.onload = displayInfo;
+		-->
+		</script>
+		
+		<style type="text/css">
+			body {
+				font-family: "Arial", sans-serif;
+			}
+			
+			#detectInfo {
+				border: dashed red 3px;
+				padding: 10px;
+				width: 20em;
+				margin: 0 auto;
+				text-align: center;
+			}
+		</style>
+		
+		
+		
+	</head>
+	<body>
+		
+		<h1>Font smoothing test page</h1>
+		
+		<div id="detectInfo">
+			One moment please ... testing.	
+		</div>
+		
+		<p>This page uses a JavaScript routine 
+		that can detect whether you have a font-smoothing technology activated
+		on your browser.  For more information, please see 
+		<a href="http://www.useragentman.com/blog/?p=338">my blog post on 
+		the subject</a>.</p>  
+		
+	</body>
+</html>

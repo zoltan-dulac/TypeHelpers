@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content=
+        "text/html; charset=iso-8859-1">
+
+        <title>Font-smoothing CSS example</title>
+		<script type="text/javascript" src="../../shared/js/EventHelpers.js">        
+		</script>
+		
+		<script type="text/javascript" src="../../shared/js/TypeHelpers.js">
+		</script>
+        <link href="css/fontSmoothingExample.css" type="text/css"
+        rel="stylesheet" media="screen">
+    </head>
+
+    <body>
+        <h1>Font-smoothing CSS example</h1>
+
+        <div class="fontSmoothingMessage initiallyHidden">
+            <p>You browser <strong>is</strong> rendering this page
+            with font smoothing. Because of that, we will attempt
+            to serve up the Droid Sans font to render this page,
+            because we think it looks cool. If you are using a
+            browser (such as Google Chrome) that cannot render
+            downloaded True Type fonts by default, then the page
+            will be rendered using Arial instead.</p>
+        </div>
+
+        <div class="noFontSmoothingMessage initiallyHidden">
+            Your browser <strong>is not</strong> rendering this
+            page with font smoothing. It is for that reason we have
+            decided to use the plain old Arial font to render this
+            page, because it is hinted for use for displays that
+            don't employ a font-smoothing technology.
+        </div>
+
+        <div class="unknownFontSmoothingMessage initiallyHidden">
+            <strong>We are not sure</strong> if your browser is
+            rendering this page with a font smoothing technology.
+            It is for that reason we have decided to use the plain
+            old Arial font to render this page, because it is
+            hinted for use for displays that don't employ a
+            font-smoothing technology.
+        </div>
+		
+		
+		<p>This page uses a JavaScript routine 
+		that can detect whether you have a font-smoothing technology activated
+		on your browser.  For more information, please see 
+		<a href="http://www.useragentman.com/blog/?p=338">my blog post on 
+		the subject</a>.</p>  
+    </body>
+</html>
+

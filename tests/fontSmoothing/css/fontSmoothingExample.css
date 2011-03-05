@@ -1,0 +1,36 @@
+@font-face {
+	font-family: "Droid Sans";
+	src: url("/../../../shared/fonts/DroidSans/DroidSans.eot");
+	src: local("Droid Sans"),
+	     local("Droid Sans"), 
+	     url("/../../../shared/fonts/DroidSans/DroidSans.ttf") format("truetype");
+}
+
+/* Bold declaration only for non-IE browsers */
+@font-face {
+	font-family: "Droid Sans";
+	src: local("Droid Sans Bold"),
+	     local("Droid Sans-Bold"),
+	     url("/../../../shared/fonts/DroidSans/DroidSans-Bold.ttf") format("truetype");
+	font-weight: bold;
+}
+
+
+body {
+	font-family: "Arial", "Helvetica", sans-serif;
+}
+
+html.hasFontSmoothing-true body {
+	font-family: "Droid Sans", "Arial", "Helvetica", sans-serif;
+}
+
+
+.initiallyHidden {
+	display: none;
+}
+
+html.hasFontSmoothing-true .fontSmoothingMessage,
+html.hasFontSmoothing-false .noFontSmoothingMessage,
+html.hasFontSmoothing-unknown .unknownFontSmoothingMessage {
+	display: block;
+}
